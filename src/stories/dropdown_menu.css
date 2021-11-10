@@ -1,0 +1,27 @@
+.dropdown-container {
+  cursor: pointer;
+}
+
+.dropdown-container .dropdown__title {
+  
+}
+
+.dropdown-container .dropdown {
+  background-color: #1c1c1c;
+  padding: 10px;
+  color: #fff;
+  border-radius: 8px;
+  width: 300px;
+}
+
+.dropdown-container .dropdown__menu-item {
+  height: 50px;
+  transition: background-color 0.3s;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-container .dropdown__menu-item:hover {
+  background-color: #2b2b2b;
+}
