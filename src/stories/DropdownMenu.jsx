@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
 
 import './dropdown_menu.css';
 
@@ -26,10 +25,6 @@ const DropdownMenu = (props) => {
 			) : null}
 		</div>
 	)
-}
-
-DropdownMenu.propTypes = {
-	children: PropTypes.node
 }
 
 export default DropdownMenu;
