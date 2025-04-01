@@ -1,19 +1,11 @@
 import React from 'react';
-import './button.css';
+import {default as MaterialButton} from '@mui/material/Button';
 
-/**
- * Primary UI component for user interaction
- */
-export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
-  const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+
+const Button = ({ variant="contained", size, label, ...props }) => {
   return (
-    <button
-      type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
-      style={backgroundColor && { backgroundColor }}
-      {...props}
-    >
-      {label}
-    </button>
+    <MaterialButton variant={variant} size={size}>{label}</MaterialButton>
   );
 };
+
+export default Button;
